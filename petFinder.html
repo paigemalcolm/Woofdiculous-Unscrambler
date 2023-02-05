@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Woofdiculous Unscrambler </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class = "heading">
+        <h2 class = "title"> Woofdiculous <br> Unscrambler </h1>
+        <h3 class = "goTo"> 
+            <a href = "locations.html" target="_blank">Locations</a>
+            <a href = "events.html" target = "_blank"> Events</a>
+            <a href = "search.html" target = "_blank">Search</a> 
+            <a href = "resources.html" target = "_blank">Resources</a>
+        </h3>
+        <img class = "main-img" src = "images/dog-image Background Removed.png" alt = "main image" height = "650"> 
+        <div class="prompt">
+            <h2 class="sentence">
+                <span class="prompt-word pw1">play</span>
+                <span class="prompt-word pw2">woofdiculous</span>
+              <span class="prompt-word pw3">unscrambler</span>
+              <span class="prompt-word pw4">today!</span>
+            </h2>
+        </div>
+    </div>
+    <div class = "middle1">
+        <h2 class = "hStyle"> Can you guess this woofdiculous dog name?</h2>
+        <div >
+            <script>
+                var guessCount=0;
+                var ran = Math.floor(Math.random() * (6 - 1)) + 1;
+            </script>
+            <div id="question1" style="height: 1000px; display: none;">
+                <script>
+                    if(ran===1){
+                        document.getElementById('question1').style.display = 'block';
+                    }
+                </script>
+                <p>zillaedr</p>
+                <form id="form1">
+                    <label for="guess">Enter your guess here: (you get 5 guesses)</label><br>
+                    <br>
+                    <input type="text" id="guess1" name="guess1" value=""><br>
+                </form>
+                <button id="button1" type="button"
+                onclick="
+                if(document.getElementById('guess1').value==='drizella'){
+                    document.getElementById('correctGuess1').style.display = 'block';
+                    document.getElementById('wrongGuess1').style.display = 'none';
+                    document.getElementById('form1').style.display = 'none';
+                    document.getElementById('button1').style.display = 'none';
+                }else{
+                    guessCount++;
+                    document.getElementById('wrongGuess1').style.display = 'block';
+                }
+                if(guessCount>=5){
+                    document.getElementById('reallyWrongGuess1').style.display = 'block';
+                    document.getElementById('wrongGuess1').style.display = 'none';
+                    document.getElementById('form1').style.display = 'none';
+                    document.getElementById('button1').style.display = 'none';
+                }">
+                Click me to submit!</button>
+                <p id="correctGuess1" style="display:none;">You got it right! Find out more about this woofdiculous pet <a href="https://ws.petango.com/webservices/adoptablesearch/wsAdoptableAnimalDetails.aspx?id=51949978&css=https">here!</a></p>
+                <p id="wrongGuess1" style="display:none;">Sorry, thats not quite right!</p>
+                <p id="reallyWrongGuess1" style="display:none;">Unfortunatly, that is all your guesses! Go to this link to find other woofdiculous pets <a href="search.html" >here!</a></p>
+            </div>
+            <div id="question2" style="height: 1000px; display: none;">
+                <script>
+                    if(ran===2){
+                        document.getElementById('question2').style.display = 'block';
+                    }
+                </script>
+                <p>tllasnoe</p>
+                <form  id="form2">
+                    <label for="guess">Enter your guess here: (you get 5 guesses)</label><br>
+                    <br>
+                    <input type="text" id="guess2" name="guess2" value=""><br>
+                </form>
+                <button id="button2" type="button"
+                onclick="
+                if(document.getElementById('guess2').value==='stallone'){
+                    document.getElementById('correctGuess2').style.display = 'block';
+                    document.getElementById('wrongGuess2').style.display = 'none';
+                    document.getElementById('form2').style.display = 'none';
+                    document.getElementById('button2').style.display = 'none';
+                }else{
+                    guessCount++;
+                    document.getElementById('wrongGuess2').style.display = 'block';
+                }
+                if(guessCount>=5){
+                    document.getElementById('reallyWrongGuess2').style.display = 'block';
+                    document.getElementById('wrongGuess2').style.display = 'none';
+                    document.getElementById('form2').style.display = 'none';
+                    document.getElementById('button2').style.display = 'none';
+                }">
+                Click me to submit!</button>
+                <p id="correctGuess2" style="display:none;">You got it right! Find out more about this woofdiculous pet <a href="https://ws.petango.com/webservices/adoptablesearch/wsAdoptableAnimalDetails.aspx?id=51087586&css">here!</a></p>
+                <p id="wrongGuess2" style="display:none;">Sorry, thats not quite right!</p>
+                <p id="reallyWrongGuess2" style="display:none;">Unfortunatly, that is all your guesses! Go to this link to find other woofdiculous pets <a href="search.html" target = "_blank">here!</a></p>
+            </div>
+            <div id="question3" style="height: 1000px; display: none;">
+                <script>
+                    if(ran===3){
+                        document.getElementById('question3').style.display = 'block';
+                    }
+                </script>
+                <p>bberajcokw</p>
+                <form id="form3">
+                    <label for="guess">Enter your guess here: (you get 5 guesses)</label><br>
+                    <br>
+                    <input type="text" id="guess3" name="guess1" value=""><br>
+                </form>
+                <button  id="button3" type="button"
+                onclick="
+                if(document.getElementById('guess3').value==='jabberwock'){
+                    document.getElementById('correctGuess3').style.display = 'block';
+                    document.getElementById('wrongGuess3').style.display = 'none';
+                    document.getElementById('form3').style.display = 'none';
+                    document.getElementById('button3').style.display = 'none';
+                }else{
+                    guessCount++;
+                    document.getElementById('wrongGuess3').style.display = 'block';
+                }
+                if(guessCount>=5){
+                    document.getElementById('reallyWrongGuess3').style.display = 'block';
+                    document.getElementById('wrongGuess3').style.display = 'none';
+                    document.getElementById('form3').style.display = 'none';
+                    document.getElementById('button3').style.display = 'none';
+                }">
+                Click me to submit!</button>
+                <p id="correctGuess3" style="display:none;">You got it right! Find out more about this woofdiculous pet <a href="https://ws.petango.com/webservices/adoptablesearch/wsAdoptableAnimalDetails.aspx?id=51814655&css">here!</a></p>
+                <p id="wrongGuess3" style="display:none;">Sorry, thats not quite right!</p>
+                <p id="reallyWrongGuess3" style="display:none;">Unfortunatly, that is all your guesses! Go to this link to find other woofdiculous pets <a href="search.html" target="_blank">here!</a></p>
+            </div>
+            <div id="question4" style="height: 1000px; display: none;">
+                <script>
+                    if(ran===4){
+                        document.getElementById('question4').style.display = 'block';
+                    }
+                </script>
+                <p>adllmieh</p>
+                <form  id="form4">
+                    <label for="guess">Enter your guess here: (you get 5 guesses)</label><br>
+                    <br>
+                    <input type="text" id="guess4" name="guess4" value=""><br>
+                </form>
+                <button id="button4" type="button"
+                onclick="
+                if(document.getElementById('guess4').value==='heimdall'){
+                    document.getElementById('correctGuess4').style.display = 'block';
+                    document.getElementById('wrongGuess4').style.display = 'none';
+                    document.getElementById('form4').style.display = 'none';
+                    document.getElementById('button4').style.display = 'none';
+                }else{
+                    guessCount++;
+                    document.getElementById('wrongGuess4').style.display = 'block';
+                }
+                if(guessCount>=5){
+                    document.getElementById('reallyWrongGuess4').style.display = 'block';
+                    document.getElementById('wrongGuess4').style.display = 'none';
+                    document.getElementById('form4').style.display = 'none';
+                    document.getElementById('button4').style.display = 'none';
+                }">
+                Click me to submit!</button>
+                <p id="correctGuess4" style="display:none;">You got it right! Find out more about this woofdiculous pet <a href="https://ws.petango.com/webservices/adoptablesearch/wsAdoptableAnimalDetails.aspx?id=46318939&css=https://ws.petango.com">here!</a></p>
+                <p id="wrongGuess4" style="display:none;">Sorry, thats not quite right!</p>
+                <p id="reallyWrongGuess4" style="display:none;">Unfortunatly, that is all your guesses! Go to this link to find other woofdiculous pets <a href="search.html" target="_blank">here!</a></p>
+            </div>
+            <div id="question5" style="height: 1000px; display: none;">
+                <script>
+                    if(ran===5){
+                        document.getElementById('question5').style.display = 'block';
+                    }
+                </script>
+                <p>niademohec</p>
+                <form  id="form5">
+                    <label for="guess">Enter your guess here: (you get 5 guesses)</label><br>
+                    <br>
+                    <input type="text" id="guess5" name="guess1" value=""><br>
+                </form>
+                <button id="button5" type="button"
+                onclick="
+                if(document.getElementById('guess5').value==='medianoche'){
+                    document.getElementById('correctGuess5').style.display = 'block';
+                    document.getElementById('wrongGuess5').style.display = 'none';
+                    document.getElementById('form5').style.display = 'none';
+                    document.getElementById('button5').style.display = 'none';
+                }else{
+                    guessCount++;
+                    document.getElementById('wrongGuess5').style.display = 'block';
+                }
+                if(guessCount>=5){
+                    document.getElementById('reallyWrongGuess5').style.display = 'block';
+                    document.getElementById('wrongGuess5').style.display = 'none';
+                    document.getElementById('form5').style.display = 'none';
+                    document.getElementById('button5').style.display = 'none';
+                }">
+                Click me to submit!</button>
+                <p id="correctGuess5" style="display:none;">You got it right! Find out more about this woofdiculous pet <a href="https://ws.petango.com/webservices/adoptablesearch/wsAdoptableAnimalDetails.aspx?id=51765031&css">here!</a></p>
+                <p id="wrongGuess5" style="display:none;">Sorry, thats not quite right!</p>
+                <p id="reallyWrongGuess5" style="display:none;">Unfortunatly, that is all your guesses! Go to this link to find other woofdiculous pets <a href="search.html" target="_blank">here!</a></p>
+            </div>
+        </div>
+    </div>
+    <div class = "middle2">
+        <div class = "missionStatement">
+            <h1 id = "abUs"> About US </h1>
+            <h2 class = "hStyle"> Our Mission Statement</h1>
+            <p class = "pStyle"> Every individual within our community matters, including our furry friends! Our mission is to provide the community
+                 with a light-hearted and unique game to connect members to a local animal adoption center. We hope that our website can deliver a fresh 
+                 opportunity for each animal to be adopted into a loving home within their community, where they can finally recieve the care that they deserve. 
+            </p>
+        </div>
+        <div class = "aboutUs">
+            <h2 class = "hStyle"> Meet the Team</h2>
+            <div class = "avaCat">
+                <h2> Ava Sloan</h2>
+                <p class = "pStyle"> I'm a 4th year student at the University of Georgia, majoring in computer science. I have a deep love for 
+                    animals and used to work at an animal hospital. I also have two rescue dogs and believe that every animal deserves to be loved.
+                </p>
+                <h2> Catherine Ramirez-Rosa</h2>
+                <p class = "pStyle"> I'm a 3rd year student at the University of Georgia, majoring computer science. I find animals cute, 
+                    but prefer to love them from a distance. I am passionate about giving back to the community and would love to see more animals 
+                    at the shelter find good homes.
+                </p>
+            </div>
+            <div class = "joshPaige">
+                <h2> Joshua Yawn</h2>
+                <p class = "pStyle"> I'm a 3rd year student at the University of Georgia, majoring computer science. Growing up my family rescued 
+                    many pets from our local shelter, so I would love to see the community further support a cause that is so meaningful to me.
+                </p>
+                <h2> Paige Malcolm</h2>
+                <p class = "pStyle"> I'm a 2nd year student at Georgia State University, majoring in Computer science. I believe
+                    that all animals deserve a loving home.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class = "sources">
+        <p> All pet information is sourced from the Athens Clarke County Animal Shelter</p>
+    </div>
+
+</body>
